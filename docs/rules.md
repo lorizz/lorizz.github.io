@@ -22,7 +22,7 @@
 
 ### General
 
-**`--!nostrict` everywhere.** Luau strict mode produces false positives with metatables. Use `--!nostrict` in every file.
+**`--!nonstrict` everywhere.** Luau strict mode produces false positives with metatables. Use `--!nonstrict` in every file.
 
 **The only Scripts in the project are the two Bootstrap files.** Every other file is a `ModuleScript`.
 

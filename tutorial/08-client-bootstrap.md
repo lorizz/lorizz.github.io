@@ -8,7 +8,7 @@ The client Bootstrap is a `LocalScript` in `StarterPlayerScripts/Client/`. It co
 
 ```lua
 -- Client/Bootstrap.client.lua
---!nostrict
+--!nonstrict
 local ServiceLocator = require(game.ReplicatedStorage.Shared.Framework.ServiceLocator)
 local NetBridge      = require(game.ReplicatedStorage.Shared.Framework.NetBridge)
 local Context        = require(game.ReplicatedStorage.Shared.Framework.Context)

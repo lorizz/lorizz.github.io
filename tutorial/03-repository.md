@@ -8,7 +8,7 @@ The Repository abstracts DataStore. `DataService` will call `repo:Load()` and `r
 
 ```lua
 -- Server/Repositories/PlayerRepository.lua
---!nostrict
+--!nonstrict
 
 --- @class PlayerRepository
 --- Persists player data using DataStoreService.
@@ -86,7 +86,7 @@ The mock looks like this — identical interface, plain table storage:
 
 ```lua
 -- (optional) Server/Repositories/MockPlayerRepository.lua
---!nostrict
+--!nonstrict
 
 local MockPlayerRepository = {}
 MockPlayerRepository.__index = MockPlayerRepository

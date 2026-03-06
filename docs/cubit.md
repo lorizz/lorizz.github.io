@@ -24,7 +24,7 @@ The View never calls NetBridge directly. The Cubit never touches GUI elements. T
 ## Template
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class XCubit
 --- Manages [feature] state and actions.
@@ -70,7 +70,7 @@ return XCubit
 Simple Cubit that only receives server pushes. No user actions.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class HUDCubit
 --- Manages HUD state. Receives coin updates pushed from the server.
@@ -107,7 +107,7 @@ return HUDCubit
 Cubit that handles both server pushes and a user action, with optimistic UI update and rollback.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class InventoryCubit
 --- Manages inventory state and the UseOrb action.
@@ -164,7 +164,7 @@ return InventoryCubit
 ## Example C — ShopCubit (open/close + purchase)
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class ShopCubit
 --- Manages shop visibility and purchase flow.
@@ -211,7 +211,7 @@ return ShopCubit
 When one Cubit needs to react to another Cubit's state changes, use `ServiceLocator` internally. Never pass Cubits to each other via the constructor — that would create coupling in Bootstrap.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class NotificationCubit
 --- Listens to other Cubits and surfaces notification messages.

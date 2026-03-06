@@ -9,7 +9,7 @@ Five files. Copy them into `Shared/Framework/`. Never modify them after setup. T
 Type-safe event emitter. Replaces `BindableEvent` entirely.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class Signal
 --- Type-safe event emitter. Replaces BindableEvent entirely.
@@ -79,7 +79,7 @@ return Signal
 Central DI container. Register in Bootstrap, resolve anywhere via `Get()`.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class ServiceLocator
 --- Central DI container. Register in Bootstrap, Get anywhere.
@@ -128,7 +128,7 @@ return ServiceLocator
 Zero-boilerplate access to the most common client-side runtime values.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class Context
 --- Zero-boilerplate access to the most common client-side runtime values.
@@ -180,7 +180,7 @@ return Context
 Base class for all client Cubits. Subclass this — never instantiate directly.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class Cubit
 --- Base class for all client Cubits.
@@ -219,7 +219,7 @@ return Cubit
 Centralized wrapper for all remote communication. Never create `RemoteEvent` or `RemoteFunction` manually.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class NetBridge
 --- Centralized wrapper for all remote communication.

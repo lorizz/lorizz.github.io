@@ -8,7 +8,7 @@
 
 ```lua
 -- Server/Services/DataService.lua
---!nostrict
+--!nonstrict
 
 --- @class DataService
 --- Single source of truth for all player data on the server.

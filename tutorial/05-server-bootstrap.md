@@ -8,7 +8,7 @@ The server Bootstrap is a `Script` in `ServerScriptService/Server/`. It is the c
 
 ```lua
 -- Server/Bootstrap.server.lua
---!nostrict
+--!nonstrict
 local Players          = game:GetService("Players")
 local ServiceLocator   = require(game.ReplicatedStorage.Shared.Framework.ServiceLocator)
 local NetBridge        = require(game.ReplicatedStorage.Shared.Framework.NetBridge)

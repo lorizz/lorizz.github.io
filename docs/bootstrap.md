@@ -22,7 +22,7 @@ Responsibilities in order:
 8. Start any server-side loops
 
 ```lua
---!nostrict
+--!nonstrict
 local Players          = game:GetService("Players")
 local ServiceLocator   = require(game.ReplicatedStorage.Shared.Framework.ServiceLocator)
 local NetBridge        = require(game.ReplicatedStorage.Shared.Framework.NetBridge)
@@ -126,7 +126,7 @@ Responsibilities in order:
 5. Connect NetBridge listeners to Cubit methods
 
 ```lua
---!nostrict
+--!nonstrict
 local ServiceLocator     = require(game.ReplicatedStorage.Shared.Framework.ServiceLocator)
 local NetBridge          = require(game.ReplicatedStorage.Shared.Framework.NetBridge)
 local Context            = require(game.ReplicatedStorage.Shared.Framework.Context)

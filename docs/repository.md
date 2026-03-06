@@ -9,7 +9,7 @@ A Repository abstracts a data source. It exposes a fixed interface — `Load` an
 ## Template
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class XRepository
 --- Abstracts [describe your data source].
@@ -49,7 +49,7 @@ return XRepository
 The most common implementation. Uses `DataStoreService` to persist player data across sessions.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class PlayerRepository
 --- Persists player data using DataStoreService.
@@ -103,7 +103,7 @@ return PlayerRepository
 Used during development or testing. Identical interface, no DataStore calls, instant response.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class MockPlayerRepository
 --- In-memory implementation. Swap in Bootstrap.server.lua for development.
@@ -151,7 +151,7 @@ Every Service that depends on `repo` works identically. Nothing else changes.
 For games that need a real backend. Same interface, different implementation.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class SupabasePlayerRepository
 --- Persists player data via HttpService to a Supabase backend.

@@ -9,7 +9,7 @@ A Server Controller is the entry point for client requests. It registers `NetBri
 ## Template
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class XController
 --- Handles incoming client requests for [domain].
@@ -46,7 +46,7 @@ return XController
 ## Example — PlayerController
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class PlayerController
 --- Handles all incoming client requests related to player actions.

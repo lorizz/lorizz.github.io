@@ -8,7 +8,7 @@ The `HUDCubit` manages the coin balance on the client. It holds the current stat
 
 ```lua
 -- Client/Cubits/HUDCubit.lua
---!nostrict
+--!nonstrict
 
 --- @class HUDCubit
 --- Manages HUD state. Receives coin updates pushed from the server.

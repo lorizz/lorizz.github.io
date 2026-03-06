@@ -10,7 +10,7 @@ Type files define the shape of your data. They live in `Shared/Types/` so both t
 
 ```lua
 -- Shared/Types/PlayerTypes.lua
---!nostrict
+--!nonstrict
 
 --- @type PlayerData
 --- The full persistent state for a single player.

@@ -8,7 +8,7 @@ The `HUDView` renders the coin balance from `HUDCubit` to a `TextLabel` in the S
 
 ```lua
 -- Client/Views/HUDView.lua
---!nostrict
+--!nonstrict
 
 --- @class HUDView
 --- Renders HUDCubit state to the HUD ScreenGui.

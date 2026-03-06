@@ -9,7 +9,7 @@ Services contain all business logic. They receive a Repository via constructor i
 ## Template
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class XService
 --- [Describe the domain this service manages.]
@@ -65,7 +65,7 @@ return XService
 Manages coins and the full player data lifecycle.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class DataService
 --- Single source of truth for all player data on the server.
@@ -129,7 +129,7 @@ return DataService
 Manages item add/remove operations with its own Signal.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class InventoryService
 --- Manages all player inventory mutations.

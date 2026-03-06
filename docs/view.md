@@ -9,7 +9,7 @@ A View is a pure render function. It receives a Cubit as a parameter, reads its 
 ## Template
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class XView
 --- Renders XCubit state to ScreenGui elements.
@@ -46,7 +46,7 @@ return { Mount = Mount }
 Simple view with no user input. Only renders state.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class HUDView
 --- Renders HUDCubit state to the HUD ScreenGui.
@@ -71,7 +71,7 @@ return { Mount = Mount }
 View that renders a dynamic list and handles a button click.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class InventoryView
 --- Renders InventoryCubit state and forwards UseOrb input to the Cubit.
@@ -112,7 +112,7 @@ return { Mount = Mount }
 View that toggles visibility and surfaces an error message.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class ShopView
 --- Renders ShopCubit state and forwards purchase input.
@@ -148,7 +148,7 @@ return { Mount = Mount }
 For views that are dynamically mounted and unmounted (e.g. a popup that opens and closes), store connections and disconnect them on unmount.
 
 ```lua
---!nostrict
+--!nonstrict
 
 --- @class PopupView
 --- A view that can be mounted and unmounted dynamically.
